@@ -2,3 +2,7 @@ __pycache__/
 .env
 user_data.csv
 main.sql
+Api_doc.md
+.venv/
+.vscode/
+.DS_Store
