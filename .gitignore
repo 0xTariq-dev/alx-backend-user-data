@@ -6,3 +6,4 @@ Api_doc.md
 .venv/
 .vscode/
 .DS_Store
+main*
