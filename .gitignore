@@ -7,3 +7,4 @@ Api_doc.md
 .vscode/
 .DS_Store
 main*
+.db_User.json
