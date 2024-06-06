@@ -4,6 +4,7 @@ Module of authentication views
 """
 from flask import request, abort
 from typing import List, TypeVar
+import re
 
 
 User = TypeVar('User')
@@ -13,11 +14,18 @@ class Auth:
     """ Authentication handler class """
     def require_auth(self, path: str, excluded_paths: List[str]) -> bool:
         """ Method to mark paths that require authentication """
-        if path is None or excluded_paths is None or len(excluded_paths) == 0:
-            return True
-        if path[-1] != '/':
-            path += '/'
-        return path not in excluded_paths
+        if path is not None and excluded_paths is not None:
+            for p in excluded_paths:
+                pattern = ''
+                if p[-1] == '*':
+                    pattern = rf'{p[:-1]}.*'
+                elif p[-1] == '/':
+                    pattern = rf'{p[:-1]}/*'
+                else:
+                    pattern = rf'{p}/*'
+                if re.match(pattern, path):
+                    return False
+        return True
 
     def authorization_header(self, request=None) -> str:
         """ Method to check the authorization header """
