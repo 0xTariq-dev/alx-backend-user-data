@@ -2,9 +2,10 @@
 """
 Module of authentication views
 """
+import re
 from flask import request, abort
 from typing import List, TypeVar
-import re
+from os import getenv
 
 
 User = TypeVar('User')
@@ -36,3 +37,9 @@ class Auth:
     def current_user(self, request=None) -> User:
         """ Method to check the current user """
         return None
+
+    def session_cookie(self, request=None):
+        """ Method to check the session cookie """
+        if request is None:
+            return None
+        return request.cookies.get(getenv('SESSION_NAME'))
