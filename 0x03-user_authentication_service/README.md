@@ -31,7 +31,11 @@ $ pip3 install -r requirements.txt
         + `session_id`, representing a column of type `String(250)` that can be null
         + `reset_token`, representing a column of type `String(250)` that can be null
 
-
++ [x] 1. **Create user**
+    + In this task, you will complete the DB class provided below to implement the add_user method.
+    + The method add_user takes mandatory email and hashed_password arguments.
+    + The method should save the user to the database and return the user object.
+ 
 ---
 
 ## RESOURCES :bookmark_tabs:
