@@ -45,6 +45,12 @@ $ pip3 install -r requirements.txt
     + In this task, you will complete the DB class provided below to implement the update_user method.
     + The method update_user takes two mandatory arguments: the first argument is the user_id and the second argument is a dictionary of the user attributes to update.
     + The method should return None.
+
++ [x] 4. **Hash password**
+    + In this task, you will complete the hash_password function provided below to implement the _hash_password method.
+    + The method _hash_password takes a string argument and returns a string of bytes.
+    + The returned string is a salted hash of the input string, hashed with SHA256.
+    
 ---
 
 ## RESOURCES :bookmark_tabs:
