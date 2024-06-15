@@ -50,7 +50,12 @@ $ pip3 install -r requirements.txt
     + In this task, you will complete the hash_password function provided below to implement the _hash_password method.
     + The method _hash_password takes a string argument and returns a string of bytes.
     + The returned string is a salted hash of the input string, hashed with SHA256.
-    
+
++ [x] 5. **Register user**
+    + In this task, you will implement a register_user function that implements the following:
+        + The function takes an email and a password as arguments.
+        + The function should hash the password and save the user to the database.
+        + if the email is already registered, the function should raise a `ValueError` with the message `User <email> already exists`.
 ---
 
 ## RESOURCES :bookmark_tabs:
