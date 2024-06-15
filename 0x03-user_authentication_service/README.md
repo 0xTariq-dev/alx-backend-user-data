@@ -56,6 +56,14 @@ $ pip3 install -r requirements.txt
         + The function takes an email and a password as arguments.
         + The function should hash the password and save the user to the database.
         + if the email is already registered, the function should raise a `ValueError` with the message `User <email> already exists`.
+
++ [x] 6. **Basic Flask app**
+    + In this task, you will implement a basic Flask app that has a single `/` route that returns a JSON payload with the following format:
+        ```json
+        {"message": "Bienvenue"}
+        ```
+    + The app should should run on all local addresses and listen on port 5000.
+
 ---
 
 ## RESOURCES :bookmark_tabs:
