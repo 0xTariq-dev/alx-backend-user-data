@@ -75,6 +75,13 @@ $ pip3 install -r requirements.txt
             {"email": "<email>", "message": "user created"}
             ```
 
++ [x] 8. **Credentials validation**
+    + In this task, you will implement the Auth.valid_login method. It should expect email and password required arguments and return a boolean.
+    + The method should return True if:
+        + The email is registered in the database
+        + The password is correct
+    + Otherwise, the method should return False.
+ 
 ---
 
 ## RESOURCES :bookmark_tabs:
