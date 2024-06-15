@@ -64,6 +64,17 @@ $ pip3 install -r requirements.txt
         ```
     + The app should should run on all local addresses and listen on port 5000.
 
++ [x] 7. **Register a new user**
+    + In this task, you will implement a POST route /users that Register a new user based on form data `email` and `password`:
+        + If `email` is already registered, return a 400 status code with the message:
+            ```json
+            {"message": "email already registered"}
+            ```
+        + The response payload should be a JSON object with the following format:
+            ```json
+            {"email": "<email>", "message": "user created"}
+            ```
+
 ---
 
 ## RESOURCES :bookmark_tabs:
