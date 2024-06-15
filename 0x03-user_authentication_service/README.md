@@ -35,7 +35,16 @@ $ pip3 install -r requirements.txt
     + In this task, you will complete the DB class provided below to implement the add_user method.
     + The method add_user takes mandatory email and hashed_password arguments.
     + The method should save the user to the database and return the user object.
- 
+
++ [x] 2. **Find user**
+    + In this task, you will complete the DB class provided below to implement the find_user_by method.
+    + The method find_user_by takes a list of keyword arguments and returns the first row found in the users table as filtered by the method’s input arguments.
+    + The method should return an instance of the User model.
+
++ [x] 3. **Update user**
+    + In this task, you will complete the DB class provided below to implement the update_user method.
+    + The method update_user takes two mandatory arguments: the first argument is the user_id and the second argument is a dictionary of the user attributes to update.
+    + The method should return None.
 ---
 
 ## RESOURCES :bookmark_tabs:
