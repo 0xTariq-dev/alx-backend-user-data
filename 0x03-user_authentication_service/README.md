@@ -81,7 +81,9 @@ $ pip3 install -r requirements.txt
         + The email is registered in the database
         + The password is correct
     + Otherwise, the method should return False.
- 
+
++ [x] 9. **Generate UUIDs**
+    + In this task, you will implement the _generate_uuid function that returns a string representation of a new UUID.
 ---
 
 ## RESOURCES :bookmark_tabs:
