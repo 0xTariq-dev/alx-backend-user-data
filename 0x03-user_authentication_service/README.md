@@ -84,6 +84,10 @@ $ pip3 install -r requirements.txt
 
 + [x] 9. **Generate UUIDs**
     + In this task, you will implement the _generate_uuid function that returns a string representation of a new UUID.
+
++ [x] 10. **Get session ID**    
+    + In this task, you will implement the Auth.create_session method. It should expect an email string argument and return a string.
+    + The method should generate a new UUID, update the user’s session_id in the database with the new UUID, and return the UUID.
 ---
 
 ## RESOURCES :bookmark_tabs:
